@@ -1,0 +1,35 @@
+<div id="section1" class="container-fluid">
+  
+  <ngb-carousel *ngIf="images">
+     
+    <ng-template ngbSlide *ngFor="let image of images">
+        <div class="slider">
+            <h1>Slider</h1>
+          </div>
+      <img [src]="image" alt="Random slide">
+      <div class="carousel-caption caption">
+        <h3>Slider</h3>
+        <p>These our best projects!!!.</p>
+        <button type="button" class="btn btn-secondary" (click)="openWindowCustomClass(content)">Read More</button>
+
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <ng-template #content let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">Rezart Group</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mdl-body">
+          <img src="assets\images\director.png" alt="Igor Golovko - SEO">
+          <p>Hello Guys! You need to make your work a pleasure!
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+      </div>
+    </ng-template>
+
+</div>

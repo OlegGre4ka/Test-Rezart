@@ -1,0 +1,28 @@
+@import 'src/styles';
+
+#section2 {
+    padding-top:70px;
+    height:$section-height;
+    background-color: rgb(189, 162, 12);
+                    h2{
+                            color: green;
+
+                              }
+                    .tabs_wrapper{
+                            margin:0 auto;
+                             width:80%;
+                                }
+                    .accordian_wrapper{
+                        margin:0 auto;
+                        width:80%;
+                      
+                    }
+        }
+   @media screen and (max-width:680px){
+    #section2 {
+        height:900px;   
+    // .accordian_wrapper{
+    //        margin-bottom:10px;
+    //    }
+   }
+}

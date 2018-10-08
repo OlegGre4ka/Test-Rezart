@@ -1,0 +1,35 @@
+#section4 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #ff9800;
+            .contact_wrapper{
+                   margin:0 auto;
+                   width:80%;
+                             }
+}
+.mdl-body{
+    background-image: linear-gradient(to right, rgb(14, 221, 142) , rgba(155, 155, 14, 0.904));
+    img{
+        margin-left: 120px;
+    }
+  
+   p{
+    padding:10px;
+    text-indent: 1em;
+    color:purple; 
+    font-size:1em;  
+    font-family: "Gilroy-Bold", Roboto, sans-serif;
+    letter-spacing: .05em; 
+   }
+}
+@media screen and (max-width:368px) {
+    .mdl-body{
+    background-image: linear-gradient(to right, rgb(14, 221, 142) , rgba(155, 155, 14, 0.904));
+               
+        img{
+                     margin-left:20px;
+          
+                    }
+            }
+}

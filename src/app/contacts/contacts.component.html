@@ -1,0 +1,38 @@
+<div id="section4" class="container-fluid">
+  <div class="contact_wrapper">
+
+    <h1>
+      Contacts
+    </h1>
+    <button type="button" class="btn btn-danger" (click)="openWindowCustomClass(contacts)">Callback order</button>
+    <ng-template #contacts let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">We will callback you</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mdl-body">
+        <img src="assets\images\director.png" alt="Igor Golovko - SEO">
+        <p>Leave your phone number and we will call you soon!</p>
+        <form action="server.php">
+          <div class="form-group">
+            <label for="user">Name:</label>
+            <input type="text" class="form-control" id="user" name="username" placeholder="Write your name please">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Write your name please">
+          </div>
+          <button type="submit" class="btn btn-primary">Callback me</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+      </div>
+    </ng-template>
+    <p>Форма зверстана, валідацію я не робив, якщо потрібно то дороблю. Реалізувати відправку не вийде,справа в тому що
+      без бек-енду дані з форми
+      на емейл не відправляються,тільки на сервер</p>
+  </div>
+</div>

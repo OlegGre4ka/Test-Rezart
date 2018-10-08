@@ -1,0 +1,48 @@
+@import 'src/styles';
+#section1 {
+    margin:0;
+    padding:50px 0 0 0;
+    height:$section-height;
+    color:#ff9800;
+    background-color: #1E88E5;
+        .slider{
+                 margin:0 auto;
+                 width:80%;
+                 position: relative;
+                 z-index: 1;
+                 top: 60px;
+                }
+                .caption{
+                    h3{
+                        color:royalblue;
+                    }
+                    button{
+                        color:red;
+                    }
+                }
+         }
+
+.mdl-body{
+    background-image: linear-gradient(to right, rgb(14, 86, 221) , rgba(14, 155, 33, 0.904));
+    img{
+        margin-left:120px;
+           }
+   p{
+    padding:10px;
+    text-indent: 1em;
+    color:rgb(237, 240, 54); 
+    font-size:1em;  
+    font-family: "Gilroy-Bold", Roboto, sans-serif;
+    letter-spacing: .05em; 
+   }
+
+}
+@media screen and (max-width:368px) {
+    .mdl-body{
+        background-image: linear-gradient(to right, rgb(14, 86, 221) , rgba(14, 155, 33, 0.904));
+                img{
+                     margin-left:20px;
+          
+                    }
+            }
+}
